@@ -1,0 +1,7 @@
+<div class="container " id="authenticated">
+    <h1>Username: {{this.username}} </h1>
+    <span class="restricted" *ngIf="this.role == this.ROLE_MANAGER" (click) = "goToRestricted()"> Restricted Access</span>
+</div>
+<div class="container " id="unauthenticated">
+    Error: Access Denied
+</div>
